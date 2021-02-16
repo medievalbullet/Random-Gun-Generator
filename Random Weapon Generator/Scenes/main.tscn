@@ -1,0 +1,364 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/GUI.gd" type="Script" id=1]
+[ext_resource path="res://Art/GREY.png" type="Texture" id=2]
+
+[node name="GUI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Info" type="Container" parent="."]
+margin_left = 982.0
+margin_top = 405.0
+margin_right = 1200.0
+margin_bottom = 561.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Info"]
+modulate = Color( 0.678431, 0.678431, 0.678431, 0.458824 )
+anchor_bottom = 1.0
+margin_right = 251.0
+text = "Far from perfect but its something atleast.
+
+
+
+
+
+
+
+"
+
+[node name="Info2" type="Container" parent="."]
+margin_left = 1226.0
+margin_top = 573.0
+margin_right = 1274.0
+margin_bottom = 598.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Info2"]
+anchor_bottom = 1.0
+margin_left = 15.0
+margin_top = 6.0
+margin_right = 201.0
+margin_bottom = 4.0
+text = "v0.1"
+
+[node name="OutputInfo" type="Container" parent="."]
+margin_left = 967.0
+margin_top = 81.0
+margin_right = 1210.0
+margin_bottom = 558.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="OutputInfo"]
+modulate = Color( 1, 1, 1, 0.278431 )
+anchor_bottom = 1.0
+margin_left = 15.0
+margin_top = 6.0
+margin_right = 218.0
+margin_bottom = 45.0
+text = "With this generator you can generate guns with different properties. it has some bugs but im bad at programming im sorry bye.
+
+once you generate a weapon the top text and progress bar will show how balanced it is. ( the percentage doesn't represent the accual percentage. ) There is also a value at the right side that shows the power score of the gun."
+
+[node name="BalanceInfo" type="VBoxContainer" parent="."]
+margin_left = 256.0
+margin_top = 6.0
+margin_right = 946.0
+margin_bottom = 63.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfoHolder" type="VBoxContainer" parent="BalanceInfo"]
+margin_right = 690.0
+margin_bottom = 50.0
+
+[node name="BalanceText" type="Label" parent="BalanceInfo/InfoHolder"]
+margin_right = 690.0
+margin_bottom = 14.0
+text = "Balance Score"
+align = 1
+
+[node name="BalanceBar" type="ProgressBar" parent="BalanceInfo/InfoHolder"]
+modulate = Color( 1, 1, 1, 0.666667 )
+margin_top = 18.0
+margin_right = 690.0
+margin_bottom = 32.0
+
+[node name="BalanceTextValue" type="Label" parent="BalanceInfo/InfoHolder"]
+margin_top = 36.0
+margin_right = 690.0
+margin_bottom = 50.0
+text = "Power Score: "
+align = 2
+
+[node name="AllStats" type="VBoxContainer" parent="."]
+anchor_left = 0.307
+anchor_top = 0.113
+anchor_right = 0.307
+anchor_bottom = 0.142
+margin_left = -138.24
+margin_right = 546.76
+margin_bottom = 212.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Damage" type="VBoxContainer" parent="AllStats"]
+margin_right = 685.0
+margin_bottom = 32.0
+
+[node name="Label" type="Label" parent="AllStats/Damage"]
+margin_right = 685.0
+margin_bottom = 14.0
+text = "Damage"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProgressBar" type="ProgressBar" parent="AllStats/Damage"]
+margin_top = 18.0
+margin_right = 685.0
+margin_bottom = 32.0
+step = 1.0
+
+[node name="FireRate" type="VBoxContainer" parent="AllStats"]
+margin_top = 36.0
+margin_right = 685.0
+margin_bottom = 68.0
+
+[node name="Label" type="Label" parent="AllStats/FireRate"]
+margin_right = 685.0
+margin_bottom = 14.0
+text = "Fire Rate"
+
+[node name="ProgressBar" type="ProgressBar" parent="AllStats/FireRate"]
+margin_top = 18.0
+margin_right = 685.0
+margin_bottom = 32.0
+step = 1.0
+
+[node name="Accuracy" type="VBoxContainer" parent="AllStats"]
+margin_top = 72.0
+margin_right = 685.0
+margin_bottom = 104.0
+
+[node name="Label" type="Label" parent="AllStats/Accuracy"]
+margin_right = 685.0
+margin_bottom = 14.0
+text = "Accuracy"
+
+[node name="ProgressBar" type="ProgressBar" parent="AllStats/Accuracy"]
+margin_top = 18.0
+margin_right = 685.0
+margin_bottom = 32.0
+step = 1.0
+
+[node name="Range" type="VBoxContainer" parent="AllStats"]
+margin_top = 108.0
+margin_right = 685.0
+margin_bottom = 140.0
+
+[node name="Label" type="Label" parent="AllStats/Range"]
+margin_right = 685.0
+margin_bottom = 14.0
+text = "Range"
+
+[node name="ProgressBar" type="ProgressBar" parent="AllStats/Range"]
+margin_top = 18.0
+margin_right = 685.0
+margin_bottom = 32.0
+step = 1.0
+
+[node name="MovementSpeed" type="VBoxContainer" parent="AllStats"]
+margin_top = 144.0
+margin_right = 685.0
+margin_bottom = 176.0
+
+[node name="Label" type="Label" parent="AllStats/MovementSpeed"]
+margin_right = 685.0
+margin_bottom = 14.0
+text = "Movement Speed"
+
+[node name="ProgressBar" type="ProgressBar" parent="AllStats/MovementSpeed"]
+margin_top = 18.0
+margin_right = 685.0
+margin_bottom = 32.0
+step = 1.0
+
+[node name="Puncture" type="VBoxContainer" parent="AllStats"]
+margin_top = 180.0
+margin_right = 685.0
+margin_bottom = 212.0
+
+[node name="Label" type="Label" parent="AllStats/Puncture"]
+modulate = Color( 1, 1, 1, 0.345098 )
+margin_right = 685.0
+margin_bottom = 14.0
+text = "Puncture"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProgressBar" type="ProgressBar" parent="AllStats/Puncture"]
+modulate = Color( 1, 1, 1, 0.556863 )
+margin_top = 18.0
+margin_right = 685.0
+margin_bottom = 32.0
+step = 1.0
+
+[node name="AllStats2" type="VBoxContainer" parent="."]
+anchor_left = 0.307
+anchor_top = 0.572
+anchor_right = 0.307
+anchor_bottom = 0.578
+margin_left = -138.24
+margin_right = 546.76
+margin_bottom = 212.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MagazineSize" type="VBoxContainer" parent="AllStats2"]
+margin_right = 685.0
+margin_bottom = 42.0
+
+[node name="Label" type="Label" parent="AllStats2/MagazineSize"]
+margin_right = 685.0
+margin_bottom = 14.0
+text = "Magazine Size"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineText" type="LineEdit" parent="AllStats2/MagazineSize"]
+margin_top = 18.0
+margin_right = 685.0
+margin_bottom = 42.0
+
+[node name="ExtraAmmo" type="VBoxContainer" parent="AllStats2"]
+margin_top = 46.0
+margin_right = 685.0
+margin_bottom = 88.0
+
+[node name="Label" type="Label" parent="AllStats2/ExtraAmmo"]
+margin_right = 685.0
+margin_bottom = 14.0
+text = "Extra Ammo"
+
+[node name="LineText" type="LineEdit" parent="AllStats2/ExtraAmmo"]
+margin_top = 18.0
+margin_right = 685.0
+margin_bottom = 42.0
+
+[node name="ReloadTime" type="VBoxContainer" parent="AllStats2"]
+margin_top = 92.0
+margin_right = 685.0
+margin_bottom = 134.0
+
+[node name="Label" type="Label" parent="AllStats2/ReloadTime"]
+margin_right = 685.0
+margin_bottom = 14.0
+text = "Reload Time"
+
+[node name="LineText" type="LineEdit" parent="AllStats2/ReloadTime"]
+margin_top = 18.0
+margin_right = 685.0
+margin_bottom = 42.0
+
+[node name="Generate" type="Container" parent="."]
+anchor_left = 0.164
+anchor_top = 0.611
+anchor_right = 0.233
+anchor_bottom = 0.646
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Generate"]
+margin_left = 41.0
+margin_top = 174.0
+margin_right = 730.0
+margin_bottom = 194.0
+text = "Generate"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 14.0
+margin_top = 86.0
+margin_right = 243.0
+margin_bottom = 47.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+margin_right = 229.0
+margin_bottom = 48.0
+size_flags_horizontal = 7
+size_flags_vertical = 1
+text = "Random 
+Gun
+Generator"
+align = 1
+
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 0.592157, 0.592157, 0.65098, 1 )
+show_behind_parent = true
+position = Vector2( -3.56763, 1.18921 )
+scale = Vector2( 30, 30 )
+texture = ExtResource( 2 )
+offset = Vector2( 35, 35 )
+
+[node name="Github" type="LinkButton" parent="."]
+margin_left = 20.0
+margin_top = 21.0
+margin_right = 40.0
+margin_bottom = 14.0
+text = "Source"
+underline = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EvenMore" type="VBoxContainer" parent="."]
+margin_left = 27.0
+margin_top = 343.0
+margin_right = 162.0
+margin_bottom = 556.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="EvenMore"]
+margin_right = 135.0
+margin_bottom = 14.0
+text = "Suppressed?"
+
+[node name="Suppressed" type="LineEdit" parent="EvenMore"]
+margin_top = 18.0
+margin_right = 135.0
+margin_bottom = 42.0
+
+[node name="Label2" type="Label" parent="EvenMore"]
+margin_top = 46.0
+margin_right = 135.0
+margin_bottom = 60.0
+text = "Scope Type"
+
+[node name="ScopeType" type="LineEdit" parent="EvenMore"]
+margin_top = 64.0
+margin_right = 135.0
+margin_bottom = 88.0
+[connection signal="pressed" from="Generate/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Github" to="." method="_on_Github_pressed"]
